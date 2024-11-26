@@ -36,6 +36,7 @@ const Button: FC<ButtonProps> = ({
       color: outlined ? color : white,
       borderWidth: outlined ? 1 : 0,
       borderRadius: rounded ? 100 : 0,
+      borderColor: outlined ? color : 'transparent',
       backgroundColor: outlined ? 'transparent' : color ?? primary,
     };
 

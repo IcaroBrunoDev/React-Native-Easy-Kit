@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, SafeAreaView } from 'react-native';
 import { Accordion, Text, useTheme } from 'react-native-easy-kit';
 import { fakeFAQ } from '../../utils/fakers';
 
@@ -9,7 +9,7 @@ const AccordionScreen = () => {
   const { colors } = useTheme();
 
   return (
-    <>
+    <SafeAreaView>
       <FlatList
         data={fakeFAQ}
         keyExtractor={(item, index) => `${item.title}-${index}`}
@@ -28,7 +28,7 @@ const AccordionScreen = () => {
           </Accordion>
         )}
       />
-    </>
+    </SafeAreaView>
   );
 };
 

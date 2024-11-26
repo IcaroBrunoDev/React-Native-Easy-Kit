@@ -59,12 +59,12 @@ const Accordion: FC<AccordionProps> = ({
       Animated.parallel([
         Animated.timing(arrowAnimation, {
           toValue,
-          duration: 350,
+          duration: 250,
           useNativeDriver: false,
         }),
         Animated.timing(expandedAnimation, {
           toValue,
-          duration: 350,
+          duration: 250,
           useNativeDriver: false,
         }),
       ]).start();
